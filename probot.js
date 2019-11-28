@@ -5,7 +5,7 @@ const dateFormat = require('dateformat');
 const client = new Discord.Client(); 
 const Canvas = require("canvas"); 
 const prefix = "#";
-const token = 'توكن البوت';
+const token = 'NjQ5MzI2MjQ0OTgyMjkyNDgw.Xd8T0A.BlPTGJdLKqBt_Lc7WH_VT8YrqMs';
 const id = JSON.parse(fs.readFileSync("./id/rank.json", "utf8"));
 const antihack = JSON.parse(fs.readFileSync('./antihack.json' , 'utf8'));
 const antijoin = JSON.parse(fs.readFileSync('./antijoin.json' , 'utf8'));
@@ -1507,7 +1507,7 @@ client.on('ready', () => {
   console.log(`|===================================|`);
   console.log(`| Created By <@429972030092476437> |`);
   console.log(`|===================================|`);
-  console.log(`|        Probot Log By You !      |`);
+  console.log(`|        ÆSIR Log By You !      |`);
   console.log(`|===================================|`);
 });
 client.on('message', msg => {
@@ -1828,22 +1828,7 @@ client.on('message', message => {
 
 message.author.sendMessage(`
 **
-╭━━━╮╱╱╱╱╭━━╮╱╱╱╭╮
-┃╭━╮┃╱╱╱╱┃╭╮┃╱╱╭╯╰╮
-┃╰━╯┣━┳━━┫╰╯╰┳━┻╮╭╯
-┃╭━━┫╭┫╭╮┃╭━╮┃╭╮┃┃
-┃┃╱╱┃┃┃╰╯┃╰━╯┃╰╯┃╰╮
-╰╯╱╱╰╯╰━━┻━━━┻━━┻━╯
 
-[❖═════════════════════════════❖]
-        لماذا بروبوت ؟
-1- :rocket: سرعه اتصال ممتازه
-2- :beginner: سهل الاستخدام
-3- :warning: صيانه يوميه
-4- :money_with_wings: مجاني بالكامل
-5- :shield: يحتوي على مانع اختراق سيرفرات للحفاظ على امان سيرفرك
-6- :musical_note: يحتوي على خاصيه ميوزك بجوده عاليه
-[❖═════════════════════════════❖]
 
 الاوامر العامة
 
@@ -1925,9 +1910,6 @@ message.author.sendMessage(`
 
 اخرى 
 
-#support رابط سيرفر الدعم الفني
-
-#invite رابط اضافة البوت
 
 #ping لمعرفه سرعه اتصال البوت
 
@@ -2041,7 +2023,7 @@ client.on('message', message => {
     .setColor("#707070")
     .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true) 
     .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)               
-    .setFooter(`Probot`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
+    .setFooter(`ÆSIR`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
     .setThumbnail(heg.avatarURL);
     message.channel.send(id)
 }       });
@@ -2329,7 +2311,7 @@ if(message.content.startsWith('#bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-let copy = "ProBot";
+let copy = "ÆSIR";
 let request = `Requested By ${message.author.username}`;
 if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
 msg.react('✅')
@@ -3055,7 +3037,7 @@ client.on("guildMemberAdd", member => {
 }).catch(console.error)
 })
 
-    const devs = ['ايديك'];
+    const devs = ['478420464457482251'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
